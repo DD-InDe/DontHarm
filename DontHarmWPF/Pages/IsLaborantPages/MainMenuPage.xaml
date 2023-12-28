@@ -1,0 +1,17 @@
+﻿<Page x:Class="DontHarmWPF.Pages.IsLaborantPages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:DontHarmWPF.Pages.IsLaborantPages"
+      mc:Ignorable="d"
+      Title="Меню лаборанта-исследователя" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Button 
+                    Content="Утилизатор"/>
+        </StackPanel>
+    </Grid>
+</Page>

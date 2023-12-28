@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DontHarmWPF", "DontHarmWPF\DontHarmWPF.csproj", "{8001AB1F-2225-4720-8EF2-0808EF13CA61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DontHarmAPI", "DontHarmAPI\DontHarmAPI.csproj", "{054B6AE2-6BD5-4380-B7D6-731330C28BA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8001AB1F-2225-4720-8EF2-0808EF13CA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8001AB1F-2225-4720-8EF2-0808EF13CA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8001AB1F-2225-4720-8EF2-0808EF13CA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8001AB1F-2225-4720-8EF2-0808EF13CA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054B6AE2-6BD5-4380-B7D6-731330C28BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054B6AE2-6BD5-4380-B7D6-731330C28BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054B6AE2-6BD5-4380-B7D6-731330C28BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054B6AE2-6BD5-4380-B7D6-731330C28BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

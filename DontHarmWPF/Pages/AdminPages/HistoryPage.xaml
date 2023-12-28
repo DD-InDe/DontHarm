@@ -1,0 +1,57 @@
+﻿<Page x:Class="DontHarmWPF.Pages.AdminPages.HistoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:DontHarmWPF.Pages.AdminPages"
+      mc:Ignorable="d"
+      Title="История входов" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0"
+            Orientation="Horizontal">
+            <TextBlock Text="Фильтрация:"/>
+            <ComboBox x:Name="FilterComboBox"
+                      Width="200"
+                      DisplayMemberPath="Login"
+                      SelectionChanged="FilterComboBox_OnSelectionChanged"/>
+            <TextBlock Text="Сортировка"/>
+            <ComboBox x:Name="SortComboBox"
+                      Width="150"
+                      SelectionChanged="SortComboBox_OnSelectionChanged"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" 
+                    Orientation="Vertical">
+        <DataGrid Height="350"
+                  IsReadOnly="True"
+                  AutoGenerateColumns="False"
+                  CanUserSortColumns="False"
+                  x:Name="HistoryDataGrid">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Логин"
+                                    Binding="{Binding Employee.Login}"/>
+                <DataGridTextColumn Header="Время"
+                                    Binding="{Binding LogDate}"/>
+                <DataGridTextColumn Header="Ip-адрес"
+                                    Binding="{Binding Employee.IpAddress}"/>
+                <DataGridTextColumn Header="Успешный вход"
+                                    Binding="{Binding Successfully}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+            <StackPanel Orientation="Horizontal">
+                <Button 
+                    Content="Отправить уведомление"/>
+                <Button 
+                    Content="Заблокировать пользователя"/>
+                <Button 
+                    Content="Отключить пользователя"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Page>

@@ -1,0 +1,30 @@
+﻿<Page x:Class="DontHarmWPF.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:DontHarmWPF.Pages"
+      mc:Ignorable="d"
+      Title="AuthPage" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Логин:"/>
+                    <TextBlock Text="Пароль:"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBox x:Name="LoginTextBox"
+                             Width="150"/>
+                    <TextBox x:Name="PassTextBox"
+                             Width="150"/>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="LoginButton"
+                    Click="LoginButton_OnClick"
+                    Content="Войти"/>
+        </StackPanel>
+    </Grid>
+</Page>
